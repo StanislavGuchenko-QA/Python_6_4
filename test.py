@@ -27,13 +27,32 @@ def test_circle():
     r = 23
     area = math.pi * (r ** 2)
     assert area == 1661.9025137490005
-
     # Вычесление длины окружности
     length = 2 * math.pi * r
     assert length == 144.51326206513048
 
+
 def test_random_list():
-    # Создание списка из 10 случайных чисел от 1 до 100 и отсортировка его по возрастанию.
-    l = random.sample(range(1, 100), 10)
+    # создайте список
+    l = []
+    l = list(range(1, 100))
     assert len(l) == 10
     assert l[0] < l[-1]
+
+
+def test_unique_elements():
+    l = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]
+    # Удаление из списка повторяющихся элементов
+    l = list(set(l))
+    assert isinstance(l, list)
+    assert len(l) == 10
+    assert l == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+def test_dicts():
+    first = ["a", "b", "c", "d", "e"]
+    second = [1, 2, 3, 4, 5]
+    # Создание словаря
+    d = dict(zip(first, second))
+    assert isinstance(d, dict)
+    assert len(d) == 5
