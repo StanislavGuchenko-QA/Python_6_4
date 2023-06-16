@@ -35,7 +35,9 @@ def test_circle():
 def test_random_list():
     # создайте список
     l = []
-    l = list(range(1, 100))
+    for x in range(10):
+        l.append(random.randint(1,100))
+    l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
 
