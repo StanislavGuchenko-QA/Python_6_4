@@ -54,7 +54,8 @@ def test_unique_elements():
 def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
-    # Создание словаря
+    # Создание словаря и вывод результата
     d = dict(zip(first, second))
+    print(d.values())
     assert isinstance(d, dict)
     assert len(d) == 5
