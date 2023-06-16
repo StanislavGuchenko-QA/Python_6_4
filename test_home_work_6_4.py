@@ -1,5 +1,4 @@
 import math
-from math import pi
 import random
 
 
@@ -8,6 +7,7 @@ def test_greeting():
     age = "25"
     # Вывод строки с приветствием
     output = f"Привет, {name}! Тебе {age} лет."
+    print(output)
     assert output == "Привет, Анна! Тебе 25 лет."
 
 
