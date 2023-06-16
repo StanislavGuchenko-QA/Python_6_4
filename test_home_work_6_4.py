@@ -33,7 +33,7 @@ def test_circle():
 
 
 def test_random_list():
-    # создайте список
+    # Cоздание списка из 10 случайных чисел в диапазоне от о 1 до 100
     l = []
     for x in range(10):
         l.append(random.randint(1,100))
